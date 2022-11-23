@@ -1,0 +1,6 @@
+<input type="radio" value="ani" name="task" (click)="checked('animal')" > animal
+<input type="radio" value="fru" name="task"  (click)="checked('fruits')"> fruits
+<input type="radio" value="fod" name="task"  (click)="checked('food')"> food<br>
+
+<div *ngFor="let data of arr">
+  <input type="checkbox" [checked]='isSelected==data.type?true:false'/>{{data.name}}
